@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color:rgb(204, 230, 255);
+}
+.image{
+    position:absolute;
+	animation:animation 10s ease-in-out infinite;
+	height:85vh;
+	width:98.95%;
+	left:8px;
+	top:70px;
+    background-image:url(IMAGES/IMG1.jpg);
+	background-size:cover;
+    background-position: center;
+}
+@keyframes animation{
+    0%,99.99%{
+        background-image:url(IMAGES/IMG1.jpg) ;
+    }
+    33.33%{
+        background-image:url(IMAGES/IMG9.jpg) ;
+    }
+    66.66%{
+        background-image:url(IMAGES/IMG10.jpg) ;
+    }
+}
+.wrap{
+    background-color:black;
+    color:white;
+    font-size:20px;
+    display:flex;
+    height:60px;
+    position: relative;
+}
+.wrap>p{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 14px;
+    line-height:3px;
+    position: absolute;
+    left:20px;
+}
+
+.nav ul{
+    display: flex;
+    position: absolute;
+    right:150px;
+    height:30px;
+    line-height: 20px;
+}
+.nav ul li{
+    float:left;
+    margin:1px 10px;
+    padding:3px;
+}
+
+.nav ul li a{
+    font-size: 25px;
+    line-height:4px;
+}
+.nav > ul li a{
+    text-decoration: none;
+    color:white;
+}
+.nav > ul li{
+    list-style: none;
+}
+ul li a:hover{
+    text-decoration: underline crimson;
+    color:white;
+    font-weight: bolder;
+}
+.inside{
+    margin-top:200px;
+	color:black;
+	text-align:center;
+    font-size: 50px ;
+    font-weight: bolder;
+    animation:about 5s ease-in infinite;
+}
+@keyframes about{
+    0%,100%{
+        color:rgb(242, 13, 13);
+    }
+    50%{
+        color:	rgb(23, 23, 130);
+    }
+}
+.in{
+    position:relative;
+    margin-top: 30px;
+    padding:20px;
+    margin-left:6%;
+    font-size: 18px;
+    text-align:justify;
+    border-top: 10px solid teal;
+    border-right: 10px solid crimson;
+    width:50%;
+}
+.inn{
+    position:relative;
+    margin-top:40px;
+    margin-left:12%;
+    padding:20px;
+    font-size: 18px;
+    text-align:justify;
+    border-top: 10px solid teal;
+    border-left: 10px solid crimson;
+}
+.about{
+    position:relative;
+    margin-top: 650px;
+    width:95%;
+    padding:30px;
+    font-size: 18px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    
+}
+h2{
+    text-transform: uppercase;
+}
+@media (max-width:1000px){
+    .nav ul li a{
+        visibility: hidden;
+    }  
+}

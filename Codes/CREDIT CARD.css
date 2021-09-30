@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+}
+body{
+    background-image: url(IMAGES/money.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.credit{
+    position:absolute;
+    background-image: linear-gradient(khaki,turquoise);
+    top:50%;
+    left:30%;
+    position:absolute;
+    box-sizing: border-box;
+    transform:translate(-50%,-50%);
+    padding:100px 50px;
+    width:400px;
+    height:90%;
+    border-radius:50px;
+}
+#img1{
+    position: absolute;
+    top:10px;
+    left:70px
+}
+#img2{
+    position: absolute;
+    left:210px;
+    top:10px;
+}
+p{
+    margin-top:2px;
+    padding:2px;
+    font-weight:bold;
+}
+input{
+    padding:5px;
+    margin-bottom:5px;
+    width:100%;
+}
+input[type="text"],input[type="number"],input[type="date"]{
+    margin-top:3px;
+    margin-bottom:20px ;
+    font-size:16px;
+    border:1px solid orange;
+}
+input[type="submit"]:hover{
+    opacity: 1;
+    cursor:pointer;
+    outline:1px solid black;
+    border-radius:0px;
+}
+button,input[type="submit"]{
+    border: none;
+    height:50px;
+    width:130px;
+    text-align: center;
+    margin-top:5px;
+    margin-left:12px;
+    background-color:deepskyblue;
+}
+button:hover{
+    border:1px solid black;
+    cursor: pointer;
+}
+input[type="text"],input[type="number"],input[type="date"]{
+    cursor: pointer;
+}
+@media (max-width:1000px){
+    .nav ul li a{
+        visibility: hidden;
+    }  
+}

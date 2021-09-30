@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="REGISTER.css">
+    <script src="JAVA SCRIPT.js"></script>
+</head>
+
+<body>
+
+<div class="text">
+        <p>FLIPZON</p>
+</div>
+
+<div class="login">
+
+        <img src="IMAGES/US2.png" class="image">
+        <h2>REGISTER HERE!!</h2>
+
+        <form name="registerform" onsubmit="return page2()" method="POST">
+
+            <p>User Name</p>
+            <input type="text" name="username1" placeholder="Enter Your Name" required>
+
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter Your Email Id" required>
+
+            <p>Phonenumber</p>
+            <input type="number" name="number" placeholder="Enter Your Phonenumber" required maxlength="10">
+
+            <p>Address:</p>
+            <input type="text" name="address1" placeholder="Enter Your Address" maxlength="40" required>
+
+            <p>Password</p>
+            <input type="password" name="password1" placeholder="Enter Your Password" minlength="6">
+
+            <p>ReType-Password</p>
+            <input type="password" name="password2" placeholder="Enter Your Password" minlength="6">
+
+            <div id="errorbox"></div>
+
+            <input type="submit" name="" value="Register">
+
+            <br><br>
+            <p id="link" style="text-align: center;"><a href="INDEX.html">Back To Login</a></p>
+
+        </form>
+
+</div>
+
+</body>
+
+</html>

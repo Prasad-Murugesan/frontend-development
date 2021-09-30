@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    resize: none;
+}
+body{
+    background-color:#ffff99;
+}
+.wrap{
+    background-color:black;
+    color:white;
+    font-size:20px;
+    display:flex;
+    height:60px;
+    position: relative;
+}
+.wrap>p{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 14px;
+    line-height:3px;
+    position: absolute;
+    left:20px;
+}
+
+.nav ul{
+    display: flex;
+    position: absolute;
+    right:150px;
+    height:30px;
+    line-height: 20px;
+}
+.nav ul li{
+    float:left;
+    margin:1px 10px;
+    padding:3px;
+}
+
+.nav ul li a{
+    font-size: 25px;
+    line-height:4px;
+}
+.nav > ul li a{
+    text-decoration: none;
+    color:white;
+}
+.nav > ul li{
+    list-style: none;
+}
+ul li a:hover{
+    text-decoration: underline crimson;
+    color:white;
+    font-weight: bolder;
+}
+.phone{
+    display: flex;
+    flex-wrap: wrap;
+}
+.iphone12pro{
+    padding:5px;
+    margin:15px;
+    width:300px;
+    height:290px;
+    background-color: white;
+    border:2px solid purple;
+    text-align: center;
+    margin-top: 30px;
+}
+.iphone12procolors{
+    position: absolute;
+    top:180px;
+    left:400px;
+    width: 1090px;
+    height: 296px;
+    display: flex;
+    background-color: white;
+    border:2px solid blue;
+    justify-content: center;
+    
+}
+.combine > img{
+    padding:10px;
+    margin: 10px;
+}
+#specs-general{
+    position:absolute;
+    top:525px;
+    left:20px;
+    width:500px;
+}
+#specs-display{
+    position:absolute;
+    top:765px;
+    left:20px;
+    width:500px;
+}
+#specs-hardware{
+    position:absolute;
+    top:890px;
+    left:20px;
+    width:500px;
+}
+#specs-camera{
+    position:absolute;
+    top:1015px;
+    left:20px;
+    width:500px;
+}
+#specs-connectivity{
+    position:absolute;
+    top:1140px;
+    left:20px;
+    width:500px;
+}
+table,td{
+    border:1px solid black;    
+}
+tr:nth-child(odd){
+    background-color:paleturquoise;
+}
+tr:nth-child(even){
+    background-color:plum;
+}
+td:nth-child(1){
+    border:none;
+}
+td:nth-child(2){
+    border:none;
+}
+#specs{
+    position: absolute;
+    top:470px;
+    left:20px;
+}
+#off{
+    position: absolute;
+    top:470px;
+    left:530px;
+}
+.offer{
+    position:absolute;
+    width:500px;
+    height: 600px;
+    border: 1px solid black;
+    top:525px;
+    left:535px;
+    text-align:left;
+    background-color:ivory;
+    font-size: 18px;
+}
+.offer>p{
+    margin-left: 10px;
+}
+#user{
+    position: absolute;
+    top:470px;
+    left:1050px;
+}
+.userreview{
+    position:absolute;
+    width:450px;
+    height: 600px;
+    border: 1px solid black;
+    top:525px;
+    left:1050px;
+    text-align:left;
+    background-color:mintcream;
+    font-size: 18px;
+}
+.userreview>p{
+    margin-left: 10px;
+}
+.buy{
+    position: absolute;
+    left:650px;
+    top:1200px;
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: none;
+}
+.addtocart{
+    position: absolute;
+    left:925px;
+    top:1200px;
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    border: none;
+}
+.notify{
+    position: absolute;
+    left:1200px;
+    top:1200px;
+    width: 200px;
+    height: 50px;
+    background-color: tomato;
+    border: none;
+}
+.buy:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.addtocart:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.notify:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+@media (max-width:1000px){
+    .nav ul li a{
+        visibility: hidden;
+    }  
+}
